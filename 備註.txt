@@ -1,0 +1,67 @@
+http://opendata.cwb.gov.tw/devManual/insrtuction
+
+會員
+aa1234567890@@
+
+api授權碼
+CWB-99D208FE-4E2E-4CB2-B60A-5C46C480A556
+
+參照格式
+※URL： https://opendata.cwb.gov.tw/fileapi/v1/opendataapi/{dataid}?Authorization={apikey}&format={format}
+                
+{dataid} 為各資料集代碼 (參照：資料清單)  ex.F-A0012-001
+                
+{apikey} 為會員帳號對應之授權碼  ex.CWB-1234ABCD-78EF-GH90-12XY-IJKL12345678
+                
+{format} 為資料格式，請參照各資料集頁面確認可下載之檔案格式  ex.XML、CAP、JSON、ZIP、KMZ、GRIB2
+
+
+ex.
+https://opendata.cwb.gov.tw/fileapi/v1/opendataapi/F-C0032-001?Authorization=CWB-99D208FE-4E2E-4CB2-B60A-5C46C480A556&format=JSON
+
+資料代碼
+http://opendata.cwb.gov.tw/dist/opendata-swagger.html#/%E9%A0%90%E5%A0%B1
+
+
+
+font awesome
+晴天
+<i class="fas fa-sun" style="font-size: 48px;"></i>
+.fa-sun:before {
+    content: "\f185";
+}
+
+晴時多雲
+<i class="fas fa-cloud-sun" style="font-size: 48px;"></i>
+.fa-cloud-sun:before {
+    content: "\f6c4";
+}
+
+晴時多雲偶陣雨
+<i class="fas fa-cloud-sun-rain" style="font-size: 48px;"></i>
+.fa-cloud-sun-rain:before {
+    content: "\f743";
+}
+
+多雲
+<i class="fas fa-cloud" style="font-size: 48px;"></i>
+.fa-cloud:before {
+    content: "\f0c2";
+}
+
+陰天有雨
+<i class='fas fa-cloud-showers-heavy'></i>
+.fa-cloud-showers-heavy:before {
+    content: "\f740";
+}
+<i class="fas fa-umbrella" style="font-size: 48px;"></i>
+.fa-umbrella:before {
+    content: "\f0e9";
+}
+
+value
+晴天      1
+多雲/陰天  2-3  ||  44
+陰天有雨   4-6 || 12-18 || 26-31 ||  36  ||49-60
+晴有雲     7-8 ||  43
+晴午後陣雨  24, 34, 45-46

@@ -1,0 +1,63 @@
+body{
+    text-align: center;
+    font-size: 14px;
+    font-family: '微軟正黑體';
+    letter-spacing: 0.3em;
+    box-sizing: border-box;
+    background: rgb(191, 229, 247, .6);
+}
+.weather_container{
+    background-image: url("../images/687-1000x500.jpg");
+    /* background-image: url("https://picsum.photos/1000/500?image=687"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    margin: 50px auto 30px auto;
+    padding-top: 40px;
+    border-radius: 10px; 
+}
+h1{
+    margin: 0 0 30px;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 2px 2px 5px #444;
+}
+select{
+    height: 36px;
+    line-height: 36px;
+    width: 150px;
+    font-size: 1.2em;
+    background: transparent;
+    border: 1px solid #333;
+}
+.weather_info_wrap{
+    width: 80%;
+    max-width: 500px;
+    min-height: 200px;
+    margin: 30px auto;
+    border-top:  1px solid #ddd;
+    background-color: #fff;
+    /* opacity: .6; */
+    opacity: 0;
+    border-radius: 10px;
+}
+.weather_info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.weather_info >img{
+    width: 100px;
+}
+.weather_info p i{
+    font-size: 60px;
+}
+.weather_info >div{
+    padding: 10px 0 10px 30px;
+    font-size: 16px;
+    font-weight: bolder;
+}
