@@ -33,7 +33,7 @@ function drawCityWeather(i) {
     $(".weather_info").css("opacity", 0);
     // $(".weather_info").animate({ "opacity": 0 }, 400);
     //天氣描述
-    var wxVal = weathData[i].weatherElement[0].time[2].parameter.parameterValue;
+    var wxVal = weathData[i].weatherElement[0].time[1].parameter.parameterValue;
     var wxSrc = "";
     var bgSrc = "";
     if (wxVal == "1") {
@@ -66,27 +66,27 @@ function drawCityWeather(i) {
     $(".weather_info img").attr("src", wxsrc);
     $(".weather_container").css("background-image", bgSrc);
 
-    var wx = weathData[i].weatherElement[0].time[2].parameter.parameterName;
+    var wx = weathData[i].weatherElement[0].time[1].parameter.parameterName;
     console.log("wx: " + wx);
     $(".weather_info_wx").text(wx);
 
     //最高溫
-    var maxT = weathData[i].weatherElement[1].time[2].parameter.parameterName + " - ";
+    var maxT = weathData[i].weatherElement[1].time[1].parameter.parameterName + " - ";
     console.log("maxT: " + maxT);
     $(".weather_info_maxT").html(maxT);
 
     //最低溫
-    var minT = weathData[i].weatherElement[2].time[2].parameter.parameterName + "<sup>。</sup>C ";
+    var minT = weathData[i].weatherElement[2].time[1].parameter.parameterName + "<sup>。</sup>C ";
     console.log("minT: " + minT);
     $(".weather_info_minT").html(minT);
 
     //體感溫度
-    var ct = weathData[i].weatherElement[3].time[2].parameter.parameterName;
+    var ct = weathData[i].weatherElement[3].time[1].parameter.parameterName;
     console.log("ct: " + ct);
     $(".weather_info_ct").text(ct);
 
     //下雨機率
-    var pop = "降雨機率 " + weathData[i].weatherElement[4].time[2].parameter.parameterName + "%";
+    var pop = "降雨機率 " + weathData[i].weatherElement[4].time[1].parameter.parameterName + "%";
     console.log("pop: " + pop);
     $(".weather_info_pop").text(pop);
 

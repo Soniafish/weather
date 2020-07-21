@@ -44,6 +44,7 @@ select{
     border-radius: 10px;
 }
 .weather_info{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -60,4 +61,10 @@ select{
     padding: 10px 0 10px 30px;
     font-size: 16px;
     font-weight: bolder;
+}
+.weather_link{
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    font-size: 12px;
 }
